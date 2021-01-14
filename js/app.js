@@ -227,7 +227,7 @@ alert(nbr1 + ' + ' + nbr2 + ' = ' + resultat); */
 
 
 
-//Tuto JS #7 Les Objets
+//Tuto JS #8 Les Objets
 
 // var utilisateur = {
 //     nom: "Paul", age:25, sexe: "M"
@@ -314,3 +314,30 @@ alert(nbr1 + ' + ' + nbr2 + ' = ' + resultat); */
 
 
 // voiture.genererMessage();
+
+
+// Tuto JS #9 Récupérer des éléments HTML
+
+// var titre = document.getElementById("titre");
+// alert(titre.innerHTML);
+// console.log(titre);
+
+// var paragraphes = document.getElementsByTagName("p");
+// for(var i = 0; i < paragraphes.length; i++) {
+//     console.log(paragraphes[i].innerHTML);
+//     alert(paragraphes[i].innerHTML);
+// }
+
+
+// var pseudo = document.getElementsByName("pseudo");
+// for(var i = 0; i < pseudo.length; i++) {
+//     console.log(pseudo[i].value);
+//     alert(pseudo[i].value);
+// }
+
+var paragraphes = document.querySelectorAll("#test .paragraphe");
+
+for(var i = 0; i < paragraphes.length; i++) {
+    console.log(paragraphes[i].innerHTML);
+    alert(paragraphes[i].innerHTML);
+}
