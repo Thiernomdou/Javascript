@@ -335,9 +335,26 @@ alert(nbr1 + ' + ' + nbr2 + ' = ' + resultat); */
 //     alert(pseudo[i].value);
 // }
 
-var paragraphes = document.querySelectorAll("#test .paragraphe");
+// var paragraphes = document.querySelectorAll("#test .paragraphe");
 
-for(var i = 0; i < paragraphes.length; i++) {
-    console.log(paragraphes[i].innerHTML);
-    alert(paragraphes[i].innerHTML);
-}
+// for(var i = 0; i < paragraphes.length; i++) {
+//     console.log(paragraphes[i].innerHTML);
+//     alert(paragraphes[i].innerHTML);
+// }
+
+
+// Tuto JS #10 Modifier des éléments HTML
+// var paragraphe = document.getElementById("paragraphe");
+// alert(paragraphe.innerHTML);
+
+// var pseudo = prompt("Entrez votre pseudo");
+// paragraphe.innerHTML = "Bonjour <b> " + pseudo + " </b> !";
+
+
+var image = document.getElementById("image");
+
+var paragraphe = document.getElementById("image-src");
+paragraphe.innerHTML = "La source de l'image est : " + image.src;
+
+image.src = "images/new-york.jpg";
+paragraphe.innerHTML = "La source de l'image est : " + image.src;
