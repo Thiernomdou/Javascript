@@ -351,10 +351,51 @@ alert(nbr1 + ' + ' + nbr2 + ' = ' + resultat); */
 // paragraphe.innerHTML = "Bonjour <b> " + pseudo + " </b> !";
 
 
-var image = document.getElementById("image");
+// var image = document.getElementById("image");
 
-var paragraphe = document.getElementById("image-src");
-paragraphe.innerHTML = "La source de l'image est : " + image.src;
+// var paragraphe = document.getElementById("image-src");
+// paragraphe.innerHTML = "La source de l'image est : " + image.src;
 
-image.src = "images/new-york.jpg";
-paragraphe.innerHTML = "La source de l'image est : " + image.src;
+// image.src = "images/new-york.jpg";
+// paragraphe.innerHTML = "La source de l'image est : " + image.src;
+
+
+
+// Tuto JS #11 Modifier le style CSS
+
+// var titre = document.getElementById("titre");
+// console.log(titre);
+// console.log(titre.style);
+// titre.style.color = "white";
+// titre.style.backgroundColor = prompt("Entrez une couleur en Anglais");
+// consolr.log(titre.style);
+
+// Tuto JS #12 Les évènements
+
+//  document.getElementById("lien").addEventListener("click", function(e) {
+//      e.preventDefault();
+//     alert(" Attention lien mort ");
+//  });
+
+//  document.getElementById("lien").addEventListener("contextmenu", function(e) {
+//   if (prompt("Ouverture du menu contextuel") != "OK") {
+//       e.preventDefault();
+//   }
+// });
+
+// document.querySelector(".bouton").addEventListener("contextmenu", function(e) {
+//     if (prompt("Ouverture du menu contextuel") != "OK") {
+//         e.preventDefault();
+//     }
+//   });
+
+// document.querySelector(".bouton").addEventListener('dblclick', function(e) {
+//     alert('dbclick');
+// });
+
+// window.addEventListener("resize", function() {
+//     document.querySelector("html").style.backgroundColor = "lightblue";
+// })
+
+// sur le site W3schools.com, on peut trouver tous les types d'évènements
+
