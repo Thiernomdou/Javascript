@@ -399,3 +399,62 @@ alert(nbr1 + ' + ' + nbr2 + ' = ' + resultat); */
 
 // sur le site W3schools.com, on peut trouver tous les types d'évènements
 
+
+// Tuto JS #13 - Valider des formulaires (avec les évènements)
+// document.getElementById("inscription").addEventListener("submit", function(e) {
+    
+//     var erreur;
+
+//     var inputs = this.getElementsByTagName("input");
+
+//     for(var i = 0; i < inputs.length; i++) {
+//         if(!inputs[i].value) {
+//             erreur = "veuillez renseigner tous les champs";
+//         } 
+//     }
+
+//     if (erreur) {
+//         e.preventDefault();
+//         document.getElementById("erreur").innerHTML = erreur;
+//     }else {
+//         alert("formulaire envoyé");
+//     }
+// });
+
+//Vérification de la conformité des deux adresses email
+// document.getElementById("email2").addEventListener("input", function() {
+//     var paragrapheErreur = document.getElementById("erreur");
+
+//     if (this.value != document.getElementById("email").value) {
+//         paragrapheErreur.innerHTML = "Les deux adresses mail ne correspondent pas";
+//     } else {
+//         paragrapheErreur.innerHTML = "";
+//     }
+// });
+
+// document.forms["inscription"].addEventListener("submit", function(e) {
+
+//     var erreur;
+
+//     var inputs = this;
+
+//     //Traitement cas par cas (input unique)
+//     if (inputs["email"].value != "thi@gmail.com") {
+//         erreur = "Adresse email incorrecte";
+//     }
+
+//     // Traitement générique
+//     for(var i = 0; i < inputs.length; i++) {
+//         if(!inputs[i].value) {
+//             erreur = "Veuillez renseigner tous les champs";
+//             break;
+//         }
+//     }
+
+//     if(erreur) {
+//         e.preventDefault();
+//         document.getElementById("erreur").innerHTML = erreur;
+//     } else {
+//         alert("Formulaire envoyé");
+//     }
+// });
